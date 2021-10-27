@@ -107,7 +107,7 @@ public class ArrayListSQ<Type> implements ListSQ<Type> {
 	}
 	
 	/**
-	 * ArrayList235 will have the return String look like this:
+	 * ArrayListSQ will have the return String look like this:
 	 * Empty: 
 	 * "[]"
 	 * One Element: 

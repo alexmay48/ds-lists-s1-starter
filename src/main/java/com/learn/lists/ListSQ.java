@@ -57,7 +57,7 @@ public interface ListSQ<Type> {
 	 * following: <br>
 	 * [0]--> [1]--> [2]--> [3]--> [7]--> null
 	 * <p>
-	 * For ArrayList235 let's say the virtual (not backing) array looks like the following: <br>
+	 * For ArrayListSQ let's say the virtual (not backing) array looks like the following: <br>
 	 * [0, 1, 2, 3] <br>
 	 * addMiddle(8, 7) would place the value 7 at the end so the list looks like the
 	 * following: <br>
@@ -186,9 +186,9 @@ public interface ListSQ<Type> {
 	/**
 	 * Returns a JAVA {@link ArrayList} of the data in reverse order. <br>
 	 * NOTE: This is JAVA's {@link ArrayList} we are returning, NOT our
-	 * ArrayList235. <br>
+	 * ArrayListSQ. <br>
 	 * <p>
-	 * For {@link LinkedListed235}, RECURSIVELY traverse the list, building up an
+	 * For {@link LinkedListedSQ}, RECURSIVELY traverse the list, building up an
 	 * ArrayList of the data. In order to do the recursion, you will create a helper
 	 * method called: <br>
 	 * public void toArrayListPostRecursion(ArrayList<Type> array, Node<Type> node)
@@ -206,7 +206,7 @@ public interface ListSQ<Type> {
 	/**
 	 * Returns a JAVA {@link ArrayList} of the data.<br>
 	 * NOTE: This is JAVA's {@link ArrayList} we are returning, NOT our
-	 * ArrayList235. <br>
+	 * ArrayListSQ. <br>
 	 * <p>
 	 * ITERATIVELY traverse the list, building up an ArrayList of the data in
 	 * order.<br>

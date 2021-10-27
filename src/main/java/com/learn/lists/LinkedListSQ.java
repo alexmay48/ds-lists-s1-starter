@@ -105,7 +105,7 @@ public class LinkedListSQ<Type> implements ListSQ<Type> {
 	
 	
 	/**
-	 * LinkedList235 will have the return String look like this:
+	 * LinkedListSQ will have the return String look like this:
 	 * Empty: 
 	 * "null"
 	 * One Element: 
