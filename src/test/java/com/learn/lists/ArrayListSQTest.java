@@ -405,6 +405,7 @@ public class ArrayListSQTest {
 		assertEquals(3, (int) testList.getFirst());
 	}
 
+	@Test
 	public void testClearGetFirst() {
 		ListSQ<Integer> testList = newList();
 
@@ -425,6 +426,7 @@ public class ArrayListSQTest {
 
 	}
 
+	@Test
 	public void testClearGetLast() {
 		ListSQ<Integer> testList = newList();
 
@@ -445,6 +447,7 @@ public class ArrayListSQTest {
 
 	}
 
+	@Test
 	public void testClearGet() {
 		ListSQ<Integer> testList = newList();
 
@@ -464,6 +467,7 @@ public class ArrayListSQTest {
 		});
 	}
 
+	@Test
 	public void testGetOutOfBounds() {
 		ListSQ<Integer> testList = newList();
 
@@ -501,6 +505,7 @@ public class ArrayListSQTest {
 		assertEquals(9, (int) testList2.getFirst());
 	}
 
+	@Test
 	public void testGetFirstWithEmptyList() {
 		ListSQ<Integer> testList = newList();
 		Assertions.assertThrows(NoSuchElementException.class, () -> {
@@ -508,6 +513,7 @@ public class ArrayListSQTest {
 		});
 	}
 
+	@Test
 	public void testGetLastWithEmptyList() {
 		ListSQ<Integer> testList = newList();
 		Assertions.assertThrows(NoSuchElementException.class, () -> {
@@ -558,6 +564,7 @@ public class ArrayListSQTest {
 
 	}
 
+	@Test
 	public void testRemoveFirstWithEmptyList() {
 
 		ListSQ<Integer> testList = newList();
@@ -588,6 +595,7 @@ public class ArrayListSQTest {
 
 	}
 
+	@Test
 	public void testRemoveLastWithEmptyList() {
 		ListSQ<Integer> testList = newList();
 		testList.addLast(1);
@@ -827,10 +835,10 @@ public class ArrayListSQTest {
 		testList.addLast(4);
 
 		if (testList instanceof LinkedListSQ) {
-			assertEquals(testList.toString(), "[0]--> [1]--> [2]--> [3]--> [4]--> null");
+			assertEquals("[0]--> [1]--> [2]--> [3]--> [4]--> null", testList.toString());
 		}
 		if (testList instanceof ArrayListSQ) {
-			assertEquals(testList.toString(), "[0, 1, 2, 3, 4]");
+			assertEquals("[0, 1, 2, 3, 4]", testList.toString());
 		}
 	}
 
@@ -844,10 +852,10 @@ public class ArrayListSQTest {
 		testList.addFirst(4);
 
 		if (testList instanceof LinkedListSQ) {
-			assertEquals(testList.toString(), "[4]--> [3]--> [2]--> [1]--> [0]--> null");
+			assertEquals("[4]--> [3]--> [2]--> [1]--> [0]--> null", testList.toString());
 		}
 		if (testList instanceof ArrayListSQ) {
-			assertEquals(testList.toString(), "[4, 3, 2, 1, 0]");
+			assertEquals("[4, 3, 2, 1, 0]", testList.toString());
 		}
 	}
 
@@ -856,10 +864,10 @@ public class ArrayListSQTest {
 		ListSQ<Integer> testList = newList();
 
 		if (testList instanceof LinkedListSQ) {
-			assertEquals(testList.toString(), "null");
+			assertEquals("null", testList.toString());
 		}
 		if (testList instanceof ArrayListSQ) {
-			assertEquals(testList.toString(), "[]");
+			assertEquals("[]", testList.toString());
 		}
 	}
 
@@ -869,10 +877,10 @@ public class ArrayListSQTest {
 		testList.addLast(0);
 
 		if (testList instanceof LinkedListSQ) {
-			assertEquals(testList.toString(), "[0]--> null");
+			assertEquals("[0]--> null", testList.toString());
 		}
 		if (testList instanceof ArrayListSQ) {
-			assertEquals(testList.toString(), "[0]");
+			assertEquals("[0]", testList.toString());
 		}
 	}
 
