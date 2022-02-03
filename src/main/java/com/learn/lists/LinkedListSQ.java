@@ -4,25 +4,25 @@ import java.util.ArrayList;
 import java.util.NoSuchElementException;
 
 public class LinkedListSQ<Type> implements ListSQ<Type> {
-	
+
 	private int size = 0;
 
 	@Override
 	public void addFirst(Type data) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void addLast(Type data) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void addMiddle(int index, Type data) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -46,7 +46,6 @@ public class LinkedListSQ<Type> implements ListSQ<Type> {
 	@Override
 	public void clear() {
 		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
@@ -82,7 +81,6 @@ public class LinkedListSQ<Type> implements ListSQ<Type> {
 	@Override
 	public void reverse() {
 		// TODO Auto-generated method stub
-		
 	}
 
 	@Override
@@ -102,16 +100,15 @@ public class LinkedListSQ<Type> implements ListSQ<Type> {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
-	
+
 	/**
-	 * LinkedListSQ will have the return String look like this:
-	 * Empty: 
-	 * "null"
-	 * One Element: 
-	 * "[0]--> null" 
-	 * Many Elements: 
-	 * "[0]--> [1]--> [2]--> null"
+	 * LinkedListSQ will have the return String look like this:<br>
+	 * Empty: <br>
+	 * "null" <br>
+	 * One Element: <br>
+	 * "[0]--> null" <br>
+	 * Many Elements: <br>
+	 * "[0]--> [1]--> [2]--> null" <br>
 	 * 
 	 * See the toString method within the Node class.
 	 */
@@ -120,14 +117,13 @@ public class LinkedListSQ<Type> implements ListSQ<Type> {
 		// FIXME: Return a linked List toString correctly.
 		return null;
 	}
-	
+
 	/**
 	 * Pictorially, a node is: <br>
 	 *
 	 * data next <br>
 	 * 
-	 * [5] -->
-	 * <br>
+	 * [5] --> <br>
 	 * Note, while a 5 is used above any "Type" could be contained in the node
 	 */
 	static class Node<Type> {
